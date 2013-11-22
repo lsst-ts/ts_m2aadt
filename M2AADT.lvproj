@@ -80,11 +80,11 @@
 		</Item>
 		<Item Name="View" Type="Folder">
 			<Item Name="editConfiguration.vi" Type="VI" URL="../View/editConfiguration.vi"/>
-			<Item Name="ilcView.vi" Type="VI" URL="../View/ilcView.vi"/>
 			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
+			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
 		</Item>
-		<Item Name="ILCViewRTM.rtm" Type="Document" URL="../View/ILCViewRTM.rtm"/>
+		<Item Name="M2AADTRTM.rtm" Type="Document" URL="../View/M2AADTRTM.rtm"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Application.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Component/Application/Application.lvlib"/>
