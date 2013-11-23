@@ -23,12 +23,14 @@
 		</Item>
 		<Item Name="Commands" Type="Folder">
 			<Item Name="ClearError.lvclass" Type="LVClass" URL="../Commands/ClearError/ClearError.lvclass"/>
+			<Item Name="EnableMotion.lvclass" Type="LVClass" URL="../Commands/EnableMotion/EnableMotion.lvclass"/>
 			<Item Name="Exit.lvclass" Type="LVClass" URL="../Commands/Exit/Exit.lvclass"/>
-			<Item Name="SendOutputData.lvclass" Type="LVClass" URL="../Commands/SendOutputData/SendOutputData.lvclass"/>
+			<Item Name="ForceDemand.lvclass" Type="LVClass" URL="../Commands/ForceDemand/ForceDemand.lvclass"/>
 			<Item Name="StandBy.lvclass" Type="LVClass" URL="../Commands/StandBy/StandBy.lvclass"/>
 			<Item Name="Start.lvclass" Type="LVClass" URL="../Commands/Start/Start.lvclass"/>
-			<Item Name="SwitchToOnDemandMode.lvclass" Type="LVClass" URL="../Commands/SwitchToOnDemandMode/SwitchToOnDemandMode.lvclass"/>
-			<Item Name="SwitchToStreamMode.lvclass" Type="LVClass" URL="../Commands/SwitchToStreamMode/SwitchToStreamMode.lvclass"/>
+			<Item Name="StartAutomatedTest.lvclass" Type="LVClass" URL="../Commands/StartAutomatedTest/StartAutomatedTest.lvclass"/>
+			<Item Name="StopAutomatedTest.lvclass" Type="LVClass" URL="../Commands/StopAutomatedTest/StopAutomatedTest.lvclass"/>
+			<Item Name="StopMotion.lvclass" Type="LVClass" URL="../Commands/StopMotion/StopMotion.lvclass"/>
 			<Item Name="Update.lvclass" Type="LVClass" URL="../Commands/Update/Update.lvclass"/>
 		</Item>
 		<Item Name="Configuration" Type="Folder">
@@ -62,15 +64,22 @@
 			<Item Name="StateFactory.lvclass" Type="LVClass" URL="../StateFactory/StateFactory.lvclass"/>
 		</Item>
 		<Item Name="States" Type="Folder">
-			<Item Name="DataOnDemandState.lvclass" Type="LVClass" URL="../States/DataOnDemandState/DataOnDemandState.lvclass"/>
-			<Item Name="DataStreamingState.lvclass" Type="LVClass" URL="../States/DataStreamingState/DataStreamingState.lvclass"/>
+			<Item Name="AutomatedMotionState.lvclass" Type="LVClass" URL="../States/AutomatedMotionState/AutomatedMotionState.lvclass"/>
+			<Item Name="ControlledMotionState.lvclass" Type="LVClass" URL="../States/ControlledMotionState/ControlledMotionState.lvclass"/>
 			<Item Name="EnabledState.lvclass" Type="LVClass" URL="../States/EnabledState/EnabledState.lvclass"/>
+			<Item Name="EndingCycleState.lvclass" Type="LVClass" URL="../States/EndingCycleState/EndingCycleState.lvclass"/>
+			<Item Name="ExecutingCycleState.lvclass" Type="LVClass" URL="../States/ExecutingCycleState/ExecutingCycleState.lvclass"/>
 			<Item Name="FaultState.lvclass" Type="LVClass" URL="../States/FaultState/FaultState.lvclass"/>
+			<Item Name="InteractiveMotionState.lvclass" Type="LVClass" URL="../States/InteractiveMotionState/InteractiveMotionState.lvclass"/>
+			<Item Name="MovingToNewForceState.lvclass" Type="LVClass" URL="../States/MovingToNewForceState/MovingToNewForceState.lvclass"/>
 			<Item Name="OffState.lvclass" Type="LVClass" URL="../States/OffState/OffState.lvclass"/>
+			<Item Name="PausingState.lvclass" Type="LVClass" URL="../States/PausingState/PausingState.lvclass"/>
 			<Item Name="StandbyState.lvclass" Type="LVClass" URL="../States/StandbyState/StandbyState.lvclass"/>
+			<Item Name="StoppedState.lvclass" Type="LVClass" URL="../States/StoppedState/StoppedState.lvclass"/>
 		</Item>
 		<Item Name="Typedefs" Type="Folder">
 			<Item Name="CommandSelector.ctl" Type="VI" URL="../Typedefs/CommandSelector.ctl"/>
+			<Item Name="ForceDemand.ctl" Type="VI" URL="../Typedefs/ForceDemand.ctl"/>
 			<Item Name="PubDataEvents.ctl" Type="VI" URL="../Typedefs/PubDataEvents.ctl"/>
 			<Item Name="StateSelector.ctl" Type="VI" URL="../Typedefs/StateSelector.ctl"/>
 			<Item Name="SubDataEvents.ctl" Type="VI" URL="../Typedefs/SubDataEvents.ctl"/>
