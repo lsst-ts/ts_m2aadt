@@ -34,8 +34,17 @@
 			<Item Name="Update.lvclass" Type="LVClass" URL="../Commands/Update/Update.lvclass"/>
 		</Item>
 		<Item Name="Configuration" Type="Folder">
-			<Item Name="ILCAppConfig.ctl" Type="VI" URL="../State/ILCAppConfig.ctl"/>
+			<Item Name="Actuator.ctl" Type="VI" URL="../Configuration/Actuator.ctl"/>
+			<Item Name="Combined Config.ctl" Type="VI" URL="../Configuration/Combined Config.ctl"/>
+			<Item Name="Controller.ctl" Type="VI" URL="../Configuration/Controller.ctl"/>
+			<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
+			<Item Name="ExceptionStopConditions.ctl" Type="VI" URL="../Configuration/ExceptionStopConditions.ctl"/>
+			<Item Name="ILCAppConfig.ctl" Type="VI" URL="../Configuration/ILCAppConfig.ctl"/>
+			<Item Name="SensorData.ctl" Type="VI" URL="../Configuration/SensorData.ctl"/>
+			<Item Name="Serial Configuration For Sensors.ctl" Type="VI" URL="../Configuration/Serial Configuration For Sensors.ctl"/>
+			<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
+			<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
 		</Item>
 		<Item Name="Context" Type="Folder">
 			<Item Name="Context.lvclass" Type="LVClass" URL="../Context/Context.lvclass"/>
@@ -93,6 +102,7 @@
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
 		</Item>
+		<Item Name="editActuator.vi" Type="VI" URL="../View/editActuator.vi"/>
 		<Item Name="M2AADTRTM.rtm" Type="Document" URL="../View/M2AADTRTM.rtm"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
