@@ -80,7 +80,7 @@
 <Choice>RS232</Choice>
 <Choice>RS485</Choice>
 <Choice>SerialSimulator</Choice>
-<Val>0</Val>
+<Val>2</Val>
 </EW>
 </Cluster>
 <Cluster>

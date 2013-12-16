@@ -2,8 +2,8 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{868BC0A1-DF71-4894-9713-E9F7A0E2857D}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/LoopRate_ms</Property>
-	<Property Name="varPersistentID:{B886A4AD-AA87-4107-9B9C-EE4B3B48856B}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{0F21C566-F27F-4DF2-B52B-AE791A5E7469}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/LoopRate_ms</Property>
+	<Property Name="varPersistentID:{6A58683F-8DA1-4EE8-800E-C2D8E4E7D184}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/ExitIsTrue</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -34,24 +34,49 @@
 			<Item Name="Update.lvclass" Type="LVClass" URL="../Commands/Update/Update.lvclass"/>
 		</Item>
 		<Item Name="Configuration" Type="Folder">
+			<Item Name="Ambient Temperature Sensor" Type="Folder">
+				<Item Name="Ambient Temperature Sensor.ctl" Type="VI" URL="../Configuration/Ambient Temperature Sensor.ctl"/>
+			</Item>
+			<Item Name="Compensator" Type="Folder">
+				<Item Name="Compensator.ctl" Type="VI" URL="../Configuration/Compensator.ctl"/>
+			</Item>
+			<Item Name="Distance Gauge" Type="Folder">
+				<Item Name="ChannelsToRead.ctl" Type="VI" URL="../Configuration/ChannelsToRead.ctl"/>
+				<Item Name="Distance Gauge.ctl" Type="VI" URL="../Configuration/Distance Gauge.ctl"/>
+			</Item>
+			<Item Name="Force Sensor" Type="Folder">
+				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
+			</Item>
+			<Item Name="Motor Temperature Sensor" Type="Folder">
+				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
+			</Item>
+			<Item Name="Replaced" Type="Folder">
+				<Item Name="Exception Stop Conditions.ctl" Type="VI" URL="../Configuration/Exception Stop Conditions.ctl"/>
+				<Item Name="SensorData.ctl" Type="VI" URL="../Configuration/SensorData.ctl"/>
+				<Item Name="Serial Configuration For Sensors.ctl" Type="VI" URL="../Configuration/Serial Configuration For Sensors.ctl"/>
+			</Item>
+			<Item Name="Stepper Motor" Type="Folder">
+				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
+			</Item>
+			<Item Name="TestParameters" Type="Folder">
+				<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
+				<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
+			</Item>
 			<Item Name="Actuator.ctl" Type="VI" URL="../Configuration/Actuator.ctl"/>
 			<Item Name="Combined Config.ctl" Type="VI" URL="../Configuration/Combined Config.ctl"/>
-			<Item Name="Controller.ctl" Type="VI" URL="../Configuration/Controller.ctl"/>
-			<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
-			<Item Name="ExceptionStopConditions.ctl" Type="VI" URL="../Configuration/ExceptionStopConditions.ctl"/>
 			<Item Name="ILCAppConfig.ctl" Type="VI" URL="../Configuration/ILCAppConfig.ctl"/>
-			<Item Name="SensorData.ctl" Type="VI" URL="../Configuration/SensorData.ctl"/>
-			<Item Name="Serial Configuration For Sensors.ctl" Type="VI" URL="../Configuration/Serial Configuration For Sensors.ctl"/>
-			<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
-			<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
 		</Item>
 		<Item Name="ConfigurationEditor" Type="Folder">
 			<Item Name="ConfigurationEditor.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationEditor/ConfigurationEditor.lvclass"/>
 		</Item>
+		<Item Name="ConfigurationReader" Type="Folder">
+			<Item Name="ConfigurationReader.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationReader/ConfigurationReader.lvclass"/>
+		</Item>
 		<Item Name="ConfigurationThisComponent" Type="Folder">
 			<Item Name="displayConfigurableElements.vi" Type="VI" URL="../ConfigurationThisComponent/displayConfigurableElements.vi"/>
 			<Item Name="editConfiguration.vi" Type="VI" URL="../ConfigurationThisComponent/editConfiguration.vi"/>
+			<Item Name="retrieveConfiguration.vi" Type="VI" URL="../ConfigurationThisComponent/retrieveConfiguration.vi"/>
 		</Item>
 		<Item Name="Context" Type="Folder">
 			<Item Name="Context.lvclass" Type="LVClass" URL="../Context/Context.lvclass"/>
@@ -60,6 +85,18 @@
 			<Item Name="Controller.lvclass" Type="LVClass" URL="../Controller/Controller.lvclass"/>
 		</Item>
 		<Item Name="Model" Type="Folder">
+			<Item Name="ApplicationElements" Type="Folder">
+				<Item Name="TemperatureSensor" Type="Folder">
+					<Item Name="AmbientTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/AmbientTemperatureSensor/AmbientTemperatureSensor.lvclass"/>
+					<Item Name="MotorTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/MotorTemperatureSensor/MotorTemperatureSensor.lvclass"/>
+					<Item Name="TemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/TemperatureSensor/TemperatureSensor.lvclass"/>
+				</Item>
+				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
+				<Item Name="Compensator.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Compensator/Compensator.lvclass"/>
+				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
+				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
+				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
+			</Item>
 			<Item Name="SDA" Type="Folder">
 				<Item Name="SDAAlgorithms" Type="Folder">
 					<Item Name="FrontPanelValuesSimple.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithms/FrontPanelValuesSimple/FrontPanelValuesSimple.lvclass"/>
