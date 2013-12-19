@@ -4,12 +4,12 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Compensator</Name>
+<Name>Application</Name>
 <NumElts>1</NumElts>
-<DBL>
-<Name>Per Step Delta Force</Name>
-<Val>4999.99999999999999</Val>
-</DBL>
+<U16>
+<Name>Loop Period (ms)</Name>
+<Val>100</Val>
+</U16>
 </Cluster>
 </LvVariant>
 </LVData>

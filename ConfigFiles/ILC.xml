@@ -4,17 +4,14 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>ILCAppConfig</Name>
-<NumElts>3</NumElts>
-<Cluster>
-<Name>ILCConfig</Name>
-<NumElts>3</NumElts>
+<Name>ILC</Name>
+<NumElts>4</NumElts>
 <EW>
 <Name>Input Channels</Name>
 <Choice>Channel 0</Choice>
 <Choice>3 Channels</Choice>
 <Choice>5 Channels</Choice>
-<Val>0</Val>
+<Val>2</Val>
 </EW>
 <EW>
 <Name>Scan Rate (Hz) </Name>
@@ -31,16 +28,25 @@
 <Choice>1200</Choice>
 <Choice>2400</Choice>
 <Choice>4800</Choice>
-<Val>2</Val>
+<Val>0</Val>
 </EW>
 <U8>
 <Name>ADC PGA Gain</Name>
-<Val>0</Val>
+<Val>1</Val>
 </U8>
-</Cluster>
 <Cluster>
 <Name>SerialConfig</Name>
-<NumElts>8</NumElts>
+<NumElts>2</NumElts>
+<EW>
+<Name>Serial Protocol</Name>
+<Choice>RS232</Choice>
+<Choice>RS485</Choice>
+<Choice>SerialSimulator</Choice>
+<Val>2</Val>
+</EW>
+<Cluster>
+<Name>Protocol Parameters</Name>
+<NumElts>7</NumElts>
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
@@ -48,11 +54,11 @@
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
-<Val>0</Val>
+<Val>19200</Val>
 </U32>
 <U16>
 <Name>Data Bits</Name>
-<Val>0</Val>
+<Val>8</Val>
 </U16>
 <EW>
 <Name>Parity</Name>
@@ -64,32 +70,18 @@
 <Val>0</Val>
 </EW>
 <U16>
-<Name>Stop Bits</Name>
-<Val>0</Val>
-</U16>
-<U16>
 <Name>Flow Control</Name>
 <Val>0</Val>
 </U16>
+<U16>
+<Name>Stop Bits</Name>
+<Val>10</Val>
+</U16>
 <U32>
 <Name>Timeout (ms)</Name>
-<Val>0</Val>
+<Val>10000</Val>
 </U32>
-<EW>
-<Name>Serial Protocol</Name>
-<Choice>RS232</Choice>
-<Choice>RS485</Choice>
-<Choice>SerialSimulator</Choice>
-<Val>2</Val>
-</EW>
 </Cluster>
-<Cluster>
-<Name>Application Timing</Name>
-<NumElts>1</NumElts>
-<U16>
-<Name>Loop Period (ms)</Name>
-<Val>0</Val>
-</U16>
 </Cluster>
 </Cluster>
 </LvVariant>

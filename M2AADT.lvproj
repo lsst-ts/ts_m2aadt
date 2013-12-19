@@ -2,8 +2,8 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{0F21C566-F27F-4DF2-B52B-AE791A5E7469}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/LoopRate_ms</Property>
-	<Property Name="varPersistentID:{6A58683F-8DA1-4EE8-800E-C2D8E4E7D184}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/Configuration/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{3CC8DAAD-E769-43E1-801C-E4A88FF72727}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
+	<Property Name="varPersistentID:{54DA2FE4-A011-44E2-9182-83A31157681D}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -50,33 +50,18 @@
 			<Item Name="Motor Temperature Sensor" Type="Folder">
 				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
 			</Item>
-			<Item Name="Replaced" Type="Folder">
-				<Item Name="Exception Stop Conditions.ctl" Type="VI" URL="../Configuration/Exception Stop Conditions.ctl"/>
-				<Item Name="SensorData.ctl" Type="VI" URL="../Configuration/SensorData.ctl"/>
-				<Item Name="Serial Configuration For Sensors.ctl" Type="VI" URL="../Configuration/Serial Configuration For Sensors.ctl"/>
-			</Item>
 			<Item Name="Stepper Motor" Type="Folder">
 				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			</Item>
-			<Item Name="TestParameters" Type="Folder">
+			<Item Name="Test Parameters" Type="Folder">
 				<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
 				<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
 			</Item>
-			<Item Name="Actuator.ctl" Type="VI" URL="../Configuration/Actuator.ctl"/>
-			<Item Name="Combined Config.ctl" Type="VI" URL="../Configuration/Combined Config.ctl"/>
-			<Item Name="ILCAppConfig.ctl" Type="VI" URL="../Configuration/ILCAppConfig.ctl"/>
+			<Item Name="Exception Stop Conditions.ctl" Type="VI" URL="../Configuration/Exception Stop Conditions.ctl"/>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
 		</Item>
-		<Item Name="ConfigurationEditor" Type="Folder">
-			<Item Name="ConfigurationEditor.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationEditor/ConfigurationEditor.lvclass"/>
-		</Item>
-		<Item Name="ConfigurationReader" Type="Folder">
-			<Item Name="ConfigurationReader.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationReader/ConfigurationReader.lvclass"/>
-		</Item>
 		<Item Name="ConfigurationThisComponent" Type="Folder">
-			<Item Name="displayConfigurableElements.vi" Type="VI" URL="../ConfigurationThisComponent/displayConfigurableElements.vi"/>
-			<Item Name="editConfiguration.vi" Type="VI" URL="../ConfigurationThisComponent/editConfiguration.vi"/>
-			<Item Name="retrieveConfiguration.vi" Type="VI" URL="../ConfigurationThisComponent/retrieveConfiguration.vi"/>
+			<Item Name="ConfigurationThisComponent.lvclass" Type="LVClass" URL="../ConfigurationThisComponent/ConfigurationThisComponent.lvclass"/>
 		</Item>
 		<Item Name="Context" Type="Folder">
 			<Item Name="Context.lvclass" Type="LVClass" URL="../Context/Context.lvclass"/>
@@ -100,13 +85,14 @@
 			<Item Name="SDA" Type="Folder">
 				<Item Name="SDAAlgorithms" Type="Folder">
 					<Item Name="FrontPanelValuesSimple.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithms/FrontPanelValuesSimple/FrontPanelValuesSimple.lvclass"/>
-					<Item Name="StreamingDataAlgorithm.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithm/StreamingDataAlgorithm.lvclass"/>
+					<Item Name="StreamingDataAlgorithm.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithms/StreamingDataAlgorithm/StreamingDataAlgorithm.lvclass"/>
 				</Item>
 				<Item Name="SDAFactory" Type="Folder">
 					<Item Name="ISDAFactory.lvclass" Type="LVClass" URL="../Model/ISDAFactory/ISDAFactory.lvclass"/>
 					<Item Name="SDAFactory.lvclass" Type="LVClass" URL="../Model/SDAFactory/SDAFactory.lvclass"/>
 				</Item>
 			</Item>
+			<Item Name="Temperature Sensor" Type="Folder"/>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
 		<Item Name="State" Type="Folder">
@@ -141,16 +127,16 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="View" Type="Folder">
-			<Item Name="editActuator.vi" Type="VI" URL="../View/editActuator.vi"/>
-			<Item Name="editILC.vi" Type="VI" URL="../View/editILC.vi"/>
 			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
+			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
 			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
 		</Item>
-		<Item Name="M2AADTRTM.rtm" Type="Document" URL="../View/M2AADTRTM.rtm"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Application.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Component/Application/Application.lvlib"/>
+				<Item Name="ConfigurationEditor.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationEditor/ConfigurationEditor.lvclass"/>
+				<Item Name="ConfigurationReader.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationReader/ConfigurationReader.lvclass"/>
 				<Item Name="ILCCommon.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/ILC/ILCCommon.lvlib"/>
 				<Item Name="SerialProtocols.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/SerialProtocols/SerialProtocols.lvlib"/>
 			</Item>
