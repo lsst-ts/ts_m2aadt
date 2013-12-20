@@ -37,9 +37,6 @@
 			<Item Name="Ambient Temperature Sensor" Type="Folder">
 				<Item Name="Ambient Temperature Sensor.ctl" Type="VI" URL="../Configuration/Ambient Temperature Sensor.ctl"/>
 			</Item>
-			<Item Name="Compensator" Type="Folder">
-				<Item Name="Compensator.ctl" Type="VI" URL="../Configuration/Compensator.ctl"/>
-			</Item>
 			<Item Name="Distance Gauge" Type="Folder">
 				<Item Name="ChannelsToRead.ctl" Type="VI" URL="../Configuration/ChannelsToRead.ctl"/>
 				<Item Name="Distance Gauge.ctl" Type="VI" URL="../Configuration/Distance Gauge.ctl"/>
@@ -53,11 +50,13 @@
 			<Item Name="Stepper Motor" Type="Folder">
 				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			</Item>
+			<Item Name="System Controller" Type="Folder">
+				<Item Name="System Controller.ctl" Type="VI" URL="../Configuration/System Controller.ctl"/>
+			</Item>
 			<Item Name="Test Parameters" Type="Folder">
 				<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
 				<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
 			</Item>
-			<Item Name="Exception Stop Conditions.ctl" Type="VI" URL="../Configuration/Exception Stop Conditions.ctl"/>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
 		</Item>
 		<Item Name="ConfigurationThisComponent" Type="Folder">
@@ -77,10 +76,11 @@
 					<Item Name="TemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/TemperatureSensor/TemperatureSensor.lvclass"/>
 				</Item>
 				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
-				<Item Name="Compensator.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Compensator/Compensator.lvclass"/>
 				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
 				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
 				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
+				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
+				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
 			</Item>
 			<Item Name="SDA" Type="Folder">
 				<Item Name="SDAAlgorithms" Type="Folder">
@@ -92,7 +92,6 @@
 					<Item Name="SDAFactory.lvclass" Type="LVClass" URL="../Model/SDAFactory/SDAFactory.lvclass"/>
 				</Item>
 			</Item>
-			<Item Name="Temperature Sensor" Type="Folder"/>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
 		<Item Name="State" Type="Folder">
