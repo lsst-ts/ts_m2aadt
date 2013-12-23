@@ -46,6 +46,7 @@
 			</Item>
 			<Item Name="Motor Temperature Sensor" Type="Folder">
 				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
+				<Item Name="MotorOverheatTemperature.ctl" Type="VI" URL="../Configuration/MotorOverheatTemperature.ctl"/>
 			</Item>
 			<Item Name="Stepper Motor" Type="Folder">
 				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
