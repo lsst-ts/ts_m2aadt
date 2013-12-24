@@ -119,6 +119,8 @@
 		<Item Name="Typedefs" Type="Folder">
 			<Item Name="CommandSelector.ctl" Type="VI" URL="../Typedefs/CommandSelector.ctl"/>
 			<Item Name="ForceDemand.ctl" Type="VI" URL="../Typedefs/ForceDemand.ctl"/>
+			<Item Name="M2AADTInputData.ctl" Type="VI" URL="../Typedefs/M2AADTInputData.ctl"/>
+			<Item Name="M2AADTOutputData.ctl" Type="VI" URL="../Typedefs/M2AADTOutputData.ctl"/>
 			<Item Name="PubDataEvents.ctl" Type="VI" URL="../Typedefs/PubDataEvents.ctl"/>
 			<Item Name="StateSelector.ctl" Type="VI" URL="../Typedefs/StateSelector.ctl"/>
 			<Item Name="SubDataEvents.ctl" Type="VI" URL="../Typedefs/SubDataEvents.ctl"/>
