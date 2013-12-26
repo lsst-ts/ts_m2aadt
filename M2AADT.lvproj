@@ -123,6 +123,7 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="View" Type="Folder">
+			<Item Name="demandsView.vi" Type="VI" URL="../View/demandsView.vi"/>
 			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
