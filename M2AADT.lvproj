@@ -60,6 +60,9 @@
 			</Item>
 			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
 		</Item>
+		<Item Name="ConfigurationTestParameters" Type="Folder">
+			<Item Name="ConfigurationTestParameters.lvclass" Type="LVClass" URL="../ConfigurationTestParameters/ConfigurationTestParameters.lvclass"/>
+		</Item>
 		<Item Name="ConfigurationThisComponent" Type="Folder">
 			<Item Name="ConfigurationThisComponent.lvclass" Type="LVClass" URL="../ConfigurationThisComponent/ConfigurationThisComponent.lvclass"/>
 		</Item>

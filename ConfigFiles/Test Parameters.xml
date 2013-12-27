@@ -1,0 +1,47 @@
+<?xml version='1.0' standalone='yes' ?>
+<LVData xmlns="http://www.ni.com/LVData">
+<Version>13.0f2</Version>
+<LvVariant>
+<Name>Value</Name>
+<Cluster>
+<Name>Test Parameters</Name>
+<NumElts>3</NumElts>
+<U32>
+<Name>Number of cycles for complete test</Name>
+<Val>5</Val>
+</U32>
+<Cluster>
+<Name>Cycle profile</Name>
+<NumElts>2</NumElts>
+<Array>
+<Name>Force Setpoint</Name>
+<Dimsize>2</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>4.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>5.00000000000000</Val>
+</DBL>
+</Array>
+<Array>
+<Name>Pause After</Name>
+<Dimsize>2</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>3.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>2.00000000000000</Val>
+</DBL>
+</Array>
+</Cluster>
+<String>
+<Name>Comment</Name>
+<Val>Yeah, what's up?</Val>
+</String>
+</Cluster>
+</LvVariant>
+</LVData>

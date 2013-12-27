@@ -57,10 +57,14 @@
 </Cluster>
 <Array>
 <Name>Channels To Read</Name>
-<Dimsize>0</Dimsize>
+<Dimsize>2</Dimsize>
 <I32>
 <Name></Name>
-<Val></Val>
+<Val>0</Val>
+</I32>
+<I32>
+<Name></Name>
+<Val>1</Val>
 </I32>
 </Array>
 </Cluster>
