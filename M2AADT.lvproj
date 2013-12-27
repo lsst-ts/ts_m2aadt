@@ -95,6 +95,13 @@
 			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
+		<Item Name="SimulateSerialData" Type="Folder">
+			<Item Name="DistanceGaugeSim.lvclass" Type="LVClass" URL="../SimulateSerialData/DistanceGaugeSim/DistanceGaugeSim.lvclass"/>
+			<Item Name="ILCSim1.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSim1/ILCSim1.lvclass"/>
+			<Item Name="ILCSimBasic.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSimBasic/ILCSimBasic.lvclass"/>
+			<Item Name="SimulateSerialData.lvclass" Type="LVClass" URL="../SimulateSerialData/SimulateSerialData/SimulateSerialData.lvclass"/>
+			<Item Name="TempSensorSim.lvclass" Type="LVClass" URL="../SimulateSerialData/TempSensorSim/TempSensorSim.lvclass"/>
+		</Item>
 		<Item Name="State" Type="Folder">
 			<Item Name="State.lvclass" Type="LVClass" URL="../State/State.lvclass"/>
 		</Item>
