@@ -5,6 +5,7 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="CommandSelector.ctl" Type="VI" URL="../CommandSelector.ctl"/>
+	<Item Name="ControllerData.ctl" Type="VI" URL="../ControllerData.ctl"/>
 	<Item Name="Distance Data.ctl" Type="VI" URL="../Distance Data.ctl"/>
 	<Item Name="ForceDemand.ctl" Type="VI" URL="../ForceDemand.ctl"/>
 	<Item Name="InputData.ctl" Type="VI" URL="../InputData.ctl"/>

@@ -82,6 +82,7 @@
 				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
 				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
 				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
+				<Item Name="Logger.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Logger/Logger.lvclass"/>
 				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
