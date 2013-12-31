@@ -14,4 +14,5 @@
 	<Item Name="StateSelector.ctl" Type="VI" URL="../StateSelector.ctl"/>
 	<Item Name="SubDataEvents.ctl" Type="VI" URL="../SubDataEvents.ctl"/>
 	<Item Name="TemperatureData.ctl" Type="VI" URL="../TemperatureData.ctl"/>
+	<Item Name="TestStatus.ctl" Type="VI" URL="../TestStatus.ctl"/>
 </Library>

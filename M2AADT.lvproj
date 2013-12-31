@@ -2,8 +2,9 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{3CC8DAAD-E769-43E1-801C-E4A88FF72727}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
-	<Property Name="varPersistentID:{54DA2FE4-A011-44E2-9182-83A31157681D}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{0C345849-EE02-43D7-8757-5E11DA48F736}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
+	<Property Name="varPersistentID:{6E40E3C7-B64E-486F-95FC-8E2E3A8838F3}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{714F04E3-E2B9-4FE6-BE76-8475C3FB83A6}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -134,11 +135,13 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="View" Type="Folder">
+			<Item Name="controllerView.vi" Type="VI" URL="../View/controllerView.vi"/>
 			<Item Name="demandsView.vi" Type="VI" URL="../View/demandsView.vi"/>
 			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
 			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
+			<Item Name="testStatusView.vi" Type="VI" URL="../View/testStatusView.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
@@ -157,6 +160,7 @@
 				<Item Name="compatOpenFileOperation.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatOpenFileOperation.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi"/>
+				<Item Name="Dflt Data Dir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Dflt Data Dir.vi"/>
 				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl"/>
 				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
@@ -197,6 +201,11 @@
 				<Item Name="VISA Configure Serial Port (Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Instr).vi"/>
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write To Spreadsheet File (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (DBL).vi"/>
+				<Item Name="Write To Spreadsheet File (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (I64).vi"/>
+				<Item Name="Write To Spreadsheet File (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File (string).vi"/>
+				<Item Name="Write To Spreadsheet File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write To Spreadsheet File.vi"/>
 				<Item Name="Write to XML File(array).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(array).vi"/>
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>

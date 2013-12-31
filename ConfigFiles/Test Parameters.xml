@@ -5,7 +5,7 @@
 <Name>Value</Name>
 <Cluster>
 <Name>Test Parameters</Name>
-<NumElts>3</NumElts>
+<NumElts>4</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
 <Val>5</Val>
@@ -30,17 +30,21 @@
 <Dimsize>2</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>3.00000000000000</Val>
+<Val>2.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>2.00000000000000</Val>
+<Val>3.00000000000000</Val>
 </DBL>
 </Array>
 </Cluster>
+<U32>
+<Name>Max records per file</Name>
+<Val>100</Val>
+</U32>
 <String>
 <Name>Comment</Name>
-<Val>We tightened the thingamajig on the whatchamacallit.</Val>
+<Val>Added code to split files.</Val>
 </String>
 </Cluster>
 </LvVariant>
