@@ -4,7 +4,6 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{0C345849-EE02-43D7-8757-5E11DA48F736}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{6E40E3C7-B64E-486F-95FC-8E2E3A8838F3}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
-	<Property Name="varPersistentID:{714F04E3-E2B9-4FE6-BE76-8475C3FB83A6}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
