@@ -5,10 +5,10 @@
 <Name>Value</Name>
 <Cluster>
 <Name>Test Parameters</Name>
-<NumElts>4</NumElts>
+<NumElts>5</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>5</Val>
+<Val>2</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
@@ -30,21 +30,25 @@
 <Dimsize>2</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>2.00000000000000</Val>
+<Val>3.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>3.00000000000000</Val>
+<Val>2.00000000000000</Val>
 </DBL>
 </Array>
 </Cluster>
+<Path>
+<Name>Log Directory</Name>
+<Val>C:\Users\Paul\Documents\Bob</Val>
+</Path>
 <U32>
 <Name>Max records per file</Name>
 <Val>100</Val>
 </U32>
 <String>
 <Name>Comment</Name>
-<Val>Added code to split files.</Val>
+<Val>Allowed specification of log directory.</Val>
 </String>
 </Cluster>
 </LvVariant>
