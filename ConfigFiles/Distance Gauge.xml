@@ -22,11 +22,11 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val></Val>
+<Val>COM4</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
-<Val>9600</Val>
+<Val>38400</Val>
 </U32>
 <U16>
 <Name>Data Bits</Name>
@@ -51,7 +51,7 @@
 </U16>
 <U32>
 <Name>Timeout (ms)</Name>
-<Val>10000</Val>
+<Val>100</Val>
 </U32>
 </Cluster>
 </Cluster>

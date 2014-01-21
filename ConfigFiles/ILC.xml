@@ -50,11 +50,11 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val></Val>
+<Val>COM4</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
-<Val>19200</Val>
+<Val>115200</Val>
 </U32>
 <U16>
 <Name>Data Bits</Name>
