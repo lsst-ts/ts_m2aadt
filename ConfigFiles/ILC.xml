@@ -50,7 +50,7 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM4</Val>
+<Val>COM3</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
