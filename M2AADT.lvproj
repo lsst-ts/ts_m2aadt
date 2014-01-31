@@ -4,6 +4,7 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{0C345849-EE02-43D7-8757-5E11DA48F736}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{6E40E3C7-B64E-486F-95FC-8E2E3A8838F3}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -103,6 +104,7 @@
 			<Item Name="DistanceGaugeSim.lvclass" Type="LVClass" URL="../SimulateSerialData/DistanceGaugeSim/DistanceGaugeSim.lvclass"/>
 			<Item Name="ILCSim1.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSim1/ILCSim1.lvclass"/>
 			<Item Name="ILCSimBasic.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSimBasic/ILCSimBasic.lvclass"/>
+			<Item Name="ILCSimulatorSignals.lvlib" Type="Library" URL="../SimulateSerialData/ILCSimulatorSignals/ILCSimulatorSignals.lvlib"/>
 			<Item Name="SimulateSerialData.lvclass" Type="LVClass" URL="../SimulateSerialData/SimulateSerialData/SimulateSerialData.lvclass"/>
 			<Item Name="TempSensorSim.lvclass" Type="LVClass" URL="../SimulateSerialData/TempSensorSim/TempSensorSim.lvclass"/>
 		</Item>
@@ -209,7 +211,6 @@
 				<Item Name="Write to XML File(string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File(string).vi"/>
 				<Item Name="Write to XML File.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/Write to XML File.vi"/>
 			</Item>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

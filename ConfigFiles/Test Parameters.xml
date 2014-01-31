@@ -8,7 +8,7 @@
 <NumElts>5</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>5</Val>
+<Val>3</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
@@ -30,11 +30,11 @@
 <Dimsize>2</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>3.00000000000000</Val>
+<Val>5.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>2.00000000000000</Val>
+<Val>6.00000000000000</Val>
 </DBL>
 </Array>
 </Cluster>
@@ -44,7 +44,7 @@
 </Path>
 <U32>
 <Name>Max records per file</Name>
-<Val>200</Val>
+<Val>2000</Val>
 </U32>
 <String>
 <Name>Comment</Name>

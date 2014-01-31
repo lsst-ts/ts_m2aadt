@@ -8,13 +8,13 @@
 <NumElts>2</NumElts>
 <Cluster>
 <Name>SerialConfig</Name>
-<NumElts>2</NumElts>
+<NumElts>3</NumElts>
 <EW>
 <Name>Serial Protocol</Name>
 <Choice>RS232</Choice>
 <Choice>RS485</Choice>
 <Choice>SerialSimulator</Choice>
-<Val>2</Val>
+<Val>0</Val>
 </EW>
 <Cluster>
 <Name>Protocol Parameters</Name>
@@ -22,7 +22,7 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM4</Val>
+<Val>COM6</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
@@ -51,8 +51,24 @@
 </U16>
 <U32>
 <Name>Timeout (ms)</Name>
+<Val>10000</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Serial Message Parameters</Name>
+<NumElts>3</NumElts>
+<U32>
+<Name>Byte Count</Name>
 <Val>100</Val>
 </U32>
+<Boolean>
+<Name>Enable Termination Character</Name>
+<Val>1</Val>
+</Boolean>
+<U8>
+<Name>Termination Char</Name>
+<Val>10</Val>
+</U8>
 </Cluster>
 </Cluster>
 <Array>
