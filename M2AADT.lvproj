@@ -53,6 +53,7 @@
 				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			</Item>
 			<Item Name="System Controller" Type="Folder">
+				<Item Name="PIDGains.ctl" Type="VI" URL="../Configuration/PIDGains.ctl"/>
 				<Item Name="System Controller.ctl" Type="VI" URL="../Configuration/System Controller.ctl"/>
 			</Item>
 			<Item Name="Test Parameters" Type="Folder">
@@ -138,6 +139,7 @@
 		<Item Name="View" Type="Folder">
 			<Item Name="controllerView.vi" Type="VI" URL="../View/controllerView.vi"/>
 			<Item Name="demandsView.vi" Type="VI" URL="../View/demandsView.vi"/>
+			<Item Name="inputsChartView.vi" Type="VI" URL="../View/inputsChartView.vi"/>
 			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
@@ -183,6 +185,7 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
+				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="NI_PtbyPt.lvlib" Type="Library" URL="/&lt;vilib&gt;/ptbypt/NI_PtbyPt.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>

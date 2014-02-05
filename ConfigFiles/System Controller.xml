@@ -6,13 +6,25 @@
 <Cluster>
 <Name>System Controller</Name>
 <NumElts>2</NumElts>
+<Cluster>
+<Name>PID Gains</Name>
+<NumElts>3</NumElts>
 <DBL>
-<Name>Per Step Delta Force</Name>
-<Val>2.00000000000000</Val>
+<Name>Proportional Gain (Kc)</Name>
+<Val>1.00000000000000</Val>
 </DBL>
 <DBL>
+<Name>Integral Time (Ti, min)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Derivative Time (Td, min)</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+</Cluster>
+<DBL>
 <Name>Force Error In Range Limit</Name>
-<Val>10.00000000000000</Val>
+<Val>1.00000000000000</Val>
 </DBL>
 </Cluster>
 </LvVariant>
