@@ -94,16 +94,6 @@
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
 			</Item>
-			<Item Name="SDA" Type="Folder">
-				<Item Name="SDAAlgorithms" Type="Folder">
-					<Item Name="FrontPanelValuesSimple.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithms/FrontPanelValuesSimple/FrontPanelValuesSimple.lvclass"/>
-					<Item Name="StreamingDataAlgorithm.lvclass" Type="LVClass" URL="../Model/StreamingDataAlgorithms/StreamingDataAlgorithm/StreamingDataAlgorithm.lvclass"/>
-				</Item>
-				<Item Name="SDAFactory" Type="Folder">
-					<Item Name="ISDAFactory.lvclass" Type="LVClass" URL="../Model/ISDAFactory/ISDAFactory.lvclass"/>
-					<Item Name="SDAFactory.lvclass" Type="LVClass" URL="../Model/SDAFactory/SDAFactory.lvclass"/>
-				</Item>
-			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
 		<Item Name="SimulateSerialData" Type="Folder">
