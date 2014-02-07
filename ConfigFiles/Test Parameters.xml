@@ -18,11 +18,11 @@
 <Dimsize>2</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>50.00000000000000</Val>
+<Val>100.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>-50.00000000000000</Val>
+<Val>-100.00000000000000</Val>
 </DBL>
 </Array>
 <Array>
@@ -48,7 +48,7 @@
 </U32>
 <String>
 <Name>Comment</Name>
-<Val>Allowed specification of log directory.</Val>
+<Val>Test with Germán.</Val>
 </String>
 </Cluster>
 </LvVariant>

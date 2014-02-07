@@ -42,6 +42,9 @@
 				<Item Name="ChannelsToRead.ctl" Type="VI" URL="../Configuration/ChannelsToRead.ctl"/>
 				<Item Name="Distance Gauge.ctl" Type="VI" URL="../Configuration/Distance Gauge.ctl"/>
 			</Item>
+			<Item Name="Encoder" Type="Folder">
+				<Item Name="Encoder.ctl" Type="VI" URL="../Configuration/Encoder.ctl"/>
+			</Item>
 			<Item Name="Force Sensor" Type="Folder">
 				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
 			</Item>
@@ -83,9 +86,11 @@
 				</Item>
 				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
 				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
+				<Item Name="Encoder.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Encoder/Encoder.lvclass"/>
 				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
 				<Item Name="Logger.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Logger/Logger.lvclass"/>
 				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
+				<Item Name="StiffnessMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StiffnessMonitor/StiffnessMonitor.lvclass"/>
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
 			</Item>
