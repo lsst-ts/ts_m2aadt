@@ -16,4 +16,5 @@
 	<Item Name="SubDataEvents.ctl" Type="VI" URL="../SubDataEvents.ctl"/>
 	<Item Name="TemperatureData.ctl" Type="VI" URL="../TemperatureData.ctl"/>
 	<Item Name="TestStatus.ctl" Type="VI" URL="../TestStatus.ctl"/>
+	<Item Name="ThermocoupleData.ctl" Type="VI" URL="../ThermocoupleData.ctl"/>
 </Library>

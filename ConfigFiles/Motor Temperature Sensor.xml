@@ -7,7 +7,7 @@
 <Name>Motor Temperature Sensor</Name>
 <NumElts>2</NumElts>
 <Cluster>
-<Name>SerialConfig</Name>
+<Name>Serial</Name>
 <NumElts>3</NumElts>
 <EW>
 <Name>Serial Protocol</Name>

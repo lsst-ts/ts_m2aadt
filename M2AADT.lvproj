@@ -46,6 +46,7 @@
 				<Item Name="Encoder.ctl" Type="VI" URL="../Configuration/Encoder.ctl"/>
 			</Item>
 			<Item Name="Force Sensor" Type="Folder">
+				<Item Name="Bridge Resistors.ctl" Type="VI" URL="../Configuration/Bridge Resistors.ctl"/>
 				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
 			</Item>
 			<Item Name="Motor Temperature Sensor" Type="Folder">
@@ -63,7 +64,9 @@
 				<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
 				<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
 			</Item>
-			<Item Name="Stream Mode Algorithm.ctl" Type="VI" URL="../Configuration/Stream Mode Algorithm.ctl"/>
+			<Item Name="Thermocouple" Type="Folder">
+				<Item Name="Thermocouple.ctl" Type="VI" URL="../Configuration/Thermocouple.ctl"/>
+			</Item>
 		</Item>
 		<Item Name="ConfigurationTestParameters" Type="Folder">
 			<Item Name="ConfigurationTestParameters.lvclass" Type="LVClass" URL="../ConfigurationTestParameters/ConfigurationTestParameters.lvclass"/>
@@ -93,6 +96,7 @@
 				<Item Name="StiffnessMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StiffnessMonitor/StiffnessMonitor.lvclass"/>
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
+				<Item Name="Thermocouple.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Thermocouple/Thermocouple.lvclass"/>
 			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>

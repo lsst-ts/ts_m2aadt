@@ -7,14 +7,14 @@
 <Name>Distance Gauge</Name>
 <NumElts>2</NumElts>
 <Cluster>
-<Name>SerialConfig</Name>
+<Name>Serial</Name>
 <NumElts>3</NumElts>
 <EW>
 <Name>Serial Protocol</Name>
 <Choice>RS232</Choice>
 <Choice>RS485</Choice>
 <Choice>SerialSimulator</Choice>
-<Val>2</Val>
+<Val>0</Val>
 </EW>
 <Cluster>
 <Name>Protocol Parameters</Name>
