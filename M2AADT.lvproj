@@ -2,9 +2,10 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{0C345849-EE02-43D7-8757-5E11DA48F736}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
-	<Property Name="varPersistentID:{6E40E3C7-B64E-486F-95FC-8E2E3A8838F3}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{5EA43597-0836-4662-B7E9-FE543B805BCB}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{690B1016-969F-48CA-9B59-B62E5824C755}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
+	<Property Name="varPersistentID:{DEBE63D0-233A-4F16-85CD-661D7049D537}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -45,9 +46,15 @@
 			<Item Name="Encoder" Type="Folder">
 				<Item Name="Encoder.ctl" Type="VI" URL="../Configuration/Encoder.ctl"/>
 			</Item>
+			<Item Name="EncoderReader" Type="Folder">
+				<Item Name="Encoder Reader.ctl" Type="VI" URL="../Configuration/Encoder Reader.ctl"/>
+			</Item>
 			<Item Name="Force Sensor" Type="Folder">
 				<Item Name="Bridge Resistors.ctl" Type="VI" URL="../Configuration/Bridge Resistors.ctl"/>
 				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
+			</Item>
+			<Item Name="Log" Type="Folder">
+				<Item Name="Log.ctl" Type="VI" URL="../Configuration/Log.ctl"/>
 			</Item>
 			<Item Name="Motor Temperature Sensor" Type="Folder">
 				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
@@ -82,6 +89,11 @@
 		</Item>
 		<Item Name="Model" Type="Folder">
 			<Item Name="ApplicationElements" Type="Folder">
+				<Item Name="Log" Type="Folder">
+					<Item Name="Log.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/Log/Log.lvclass"/>
+					<Item Name="StiffnessLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/StiffnessLog/StiffnessLog.lvclass"/>
+					<Item Name="TestDataLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/TestDataLog/TestDataLog.lvclass"/>
+				</Item>
 				<Item Name="TemperatureSensor" Type="Folder">
 					<Item Name="AmbientTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/AmbientTemperatureSensor/AmbientTemperatureSensor.lvclass"/>
 					<Item Name="MotorTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/MotorTemperatureSensor/MotorTemperatureSensor.lvclass"/>
@@ -90,8 +102,8 @@
 				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
 				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
 				<Item Name="Encoder.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Encoder/Encoder.lvclass"/>
+				<Item Name="EncoderReader.lvclass" Type="LVClass" URL="../Model/ApplicationElements/EncoderReader/EncoderReader.lvclass"/>
 				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
-				<Item Name="Logger.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Logger/Logger.lvclass"/>
 				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
 				<Item Name="StiffnessMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StiffnessMonitor/StiffnessMonitor.lvclass"/>
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
@@ -143,6 +155,8 @@
 			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
 			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
 			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
+			<Item Name="stiffnessChartView.vi" Type="VI" URL="../View/stiffnessChartView.vi"/>
+			<Item Name="subpanelHelper.vi" Type="VI" URL="../View/subpanelHelper.vi"/>
 			<Item Name="testStatusView.vi" Type="VI" URL="../View/testStatusView.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">

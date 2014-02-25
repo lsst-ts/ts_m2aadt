@@ -5,10 +5,10 @@
 <Name>Value</Name>
 <Cluster>
 <Name>Test Parameters</Name>
-<NumElts>5</NumElts>
+<NumElts>2</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>3</Val>
+<Val>10</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
@@ -30,26 +30,14 @@
 <Dimsize>2</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>5.00000000000000</Val>
+<Val>6.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>6.00000000000000</Val>
+<Val>5.00000000000000</Val>
 </DBL>
 </Array>
 </Cluster>
-<Path>
-<Name>Log Directory</Name>
-<Val>C:\Users\Paul\Documents\Bob</Val>
-</Path>
-<U32>
-<Name>Max records per file</Name>
-<Val>2000</Val>
-</U32>
-<String>
-<Name>Comment</Name>
-<Val>Test with Joe.  Position sensor in place.</Val>
-</String>
 </Cluster>
 </LvVariant>
 </LVData>

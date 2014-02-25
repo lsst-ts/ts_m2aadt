@@ -59,7 +59,7 @@
 <NumElts>3</NumElts>
 <U32>
 <Name>Byte Count</Name>
-<Val>100</Val>
+<Val>200</Val>
 </U32>
 <Boolean>
 <Name>Enable Termination Character</Name>
