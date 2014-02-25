@@ -3,7 +3,6 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="varPersistentID:{0D085305-4A78-4FF1-B5DB-DF286F8A5E22}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
-	<Property Name="varPersistentID:{57FE4AD5-5A87-440B-8263-864015455BC4}" Type="Ref"></Property>
 	<Property Name="varPersistentID:{63C16536-961E-4BBF-902C-7F3DAFCBF4A1}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
 	<Property Name="varPersistentID:{D3760D17-7891-4CC2-8952-28076575DA59}" Type="Ref"></Property>
