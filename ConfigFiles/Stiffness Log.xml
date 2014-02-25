@@ -20,7 +20,7 @@
 </U32>
 <String>
 <Name>Comment</Name>
-<Val></Val>
+<Val>Test comment</Val>
 </String>
 </Cluster>
 </LvVariant>

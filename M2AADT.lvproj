@@ -2,10 +2,11 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{5EA43597-0836-4662-B7E9-FE543B805BCB}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
-	<Property Name="varPersistentID:{690B1016-969F-48CA-9B59-B62E5824C755}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
+	<Property Name="varPersistentID:{0D085305-4A78-4FF1-B5DB-DF286F8A5E22}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
+	<Property Name="varPersistentID:{57FE4AD5-5A87-440B-8263-864015455BC4}" Type="Ref"></Property>
+	<Property Name="varPersistentID:{63C16536-961E-4BBF-902C-7F3DAFCBF4A1}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
-	<Property Name="varPersistentID:{DEBE63D0-233A-4F16-85CD-661D7049D537}" Type="Ref"></Property>
+	<Property Name="varPersistentID:{D3760D17-7891-4CC2-8952-28076575DA59}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -62,6 +63,9 @@
 			</Item>
 			<Item Name="Stepper Motor" Type="Folder">
 				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
+			</Item>
+			<Item Name="StiffnessMonitor" Type="Folder">
+				<Item Name="Stiffness Monitor.ctl" Type="VI" URL="../Configuration/Stiffness Monitor.ctl"/>
 			</Item>
 			<Item Name="System Controller" Type="Folder">
 				<Item Name="PIDGains.ctl" Type="VI" URL="../Configuration/PIDGains.ctl"/>

@@ -51,7 +51,7 @@
 </U16>
 <U32>
 <Name>Timeout (ms)</Name>
-<Val>10000</Val>
+<Val>1000</Val>
 </U32>
 </Cluster>
 <Cluster>
