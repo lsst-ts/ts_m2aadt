@@ -5,7 +5,6 @@
 	<Property Name="varPersistentID:{0D085305-4A78-4FF1-B5DB-DF286F8A5E22}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
 	<Property Name="varPersistentID:{63C16536-961E-4BBF-902C-7F3DAFCBF4A1}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
-	<Property Name="varPersistentID:{D3760D17-7891-4CC2-8952-28076575DA59}" Type="Ref"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -53,9 +52,6 @@
 				<Item Name="Bridge Resistors.ctl" Type="VI" URL="../Configuration/Bridge Resistors.ctl"/>
 				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
 			</Item>
-			<Item Name="Log" Type="Folder">
-				<Item Name="Log.ctl" Type="VI" URL="../Configuration/Log.ctl"/>
-			</Item>
 			<Item Name="Motor Temperature Sensor" Type="Folder">
 				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
 				<Item Name="MotorOverheatTemperature.ctl" Type="VI" URL="../Configuration/MotorOverheatTemperature.ctl"/>
@@ -93,7 +89,7 @@
 		<Item Name="Model" Type="Folder">
 			<Item Name="ApplicationElements" Type="Folder">
 				<Item Name="Log" Type="Folder">
-					<Item Name="Log.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/Log/Log.lvclass"/>
+					<Item Name="Log.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Log/Log.lvlib"/>
 					<Item Name="StiffnessLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/StiffnessLog/StiffnessLog.lvclass"/>
 					<Item Name="TestDataLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/TestDataLog/TestDataLog.lvclass"/>
 				</Item>
