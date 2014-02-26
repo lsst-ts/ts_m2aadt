@@ -8,7 +8,7 @@
 <NumElts>2</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>2</Val>
+<Val>10</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
