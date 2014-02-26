@@ -109,6 +109,9 @@
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
 				<Item Name="Thermocouple.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Thermocouple/Thermocouple.lvclass"/>
 			</Item>
+			<Item Name="ILC_TC" Type="Folder">
+				<Item Name="ILC_TC.lvclass" Type="LVClass" URL="../Model/ILC_TC/ILC_TC.lvclass"/>
+			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
 		<Item Name="SimulateSerialData" Type="Folder">
