@@ -15,7 +15,15 @@
 <NumElts>2</NumElts>
 <Array>
 <Name>Force Setpoint</Name>
-<Dimsize>2</Dimsize>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>450.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>-450.00000000000000</Val>
+</DBL>
 <DBL>
 <Name>Numeric</Name>
 <Val>450.00000000000000</Val>
@@ -27,7 +35,15 @@
 </Array>
 <Array>
 <Name>Pause After</Name>
-<Dimsize>2</Dimsize>
+<Dimsize>4</Dimsize>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
+<DBL>
+<Name>Numeric</Name>
+<Val>0.00000000000000</Val>
+</DBL>
 <DBL>
 <Name>Numeric</Name>
 <Val>2.00000000000000</Val>
