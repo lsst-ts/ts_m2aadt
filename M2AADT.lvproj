@@ -129,6 +129,7 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="View" Type="Folder">
+			<Item Name="appControlView.vi" Type="VI" URL="../View/appControlView.vi"/>
 			<Item Name="controllerView.vi" Type="VI" URL="../View/controllerView.vi"/>
 			<Item Name="demandsView.vi" Type="VI" URL="../View/demandsView.vi"/>
 			<Item Name="inputsChartView.vi" Type="VI" URL="../View/inputsChartView.vi"/>
