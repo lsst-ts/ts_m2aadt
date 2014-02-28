@@ -2,8 +2,6 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{0D085305-4A78-4FF1-B5DB-DF286F8A5E22}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/ExitIsTrue</Property>
-	<Property Name="varPersistentID:{63C16536-961E-4BBF-902C-7F3DAFCBF4A1}" Type="Ref">/My Computer/Dependencies/user.lib/Application.lvlib/ApplicationVariables.lvlib/DemandLoopPeriod_ms</Property>
 	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -38,26 +36,9 @@
 			<Item Name="Ambient Temperature Sensor" Type="Folder">
 				<Item Name="Ambient Temperature Sensor.ctl" Type="VI" URL="../Configuration/Ambient Temperature Sensor.ctl"/>
 			</Item>
-			<Item Name="Distance Gauge" Type="Folder">
-				<Item Name="ChannelsToRead.ctl" Type="VI" URL="../Configuration/ChannelsToRead.ctl"/>
-				<Item Name="Distance Gauge.ctl" Type="VI" URL="../Configuration/Distance Gauge.ctl"/>
-			</Item>
-			<Item Name="Encoder" Type="Folder">
-				<Item Name="Encoder.ctl" Type="VI" URL="../Configuration/Encoder.ctl"/>
-			</Item>
-			<Item Name="EncoderReader" Type="Folder">
-				<Item Name="Encoder Reader.ctl" Type="VI" URL="../Configuration/Encoder Reader.ctl"/>
-			</Item>
-			<Item Name="Force Sensor" Type="Folder">
-				<Item Name="Bridge Resistors.ctl" Type="VI" URL="../Configuration/Bridge Resistors.ctl"/>
-				<Item Name="Force Sensor.ctl" Type="VI" URL="../Configuration/Force Sensor.ctl"/>
-			</Item>
 			<Item Name="Motor Temperature Sensor" Type="Folder">
 				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
 				<Item Name="MotorOverheatTemperature.ctl" Type="VI" URL="../Configuration/MotorOverheatTemperature.ctl"/>
-			</Item>
-			<Item Name="Stepper Motor" Type="Folder">
-				<Item Name="Stepper Motor.ctl" Type="VI" URL="../Configuration/Stepper Motor.ctl"/>
 			</Item>
 			<Item Name="StiffnessMonitor" Type="Folder">
 				<Item Name="Stiffness Monitor.ctl" Type="VI" URL="../Configuration/Stiffness Monitor.ctl"/>
@@ -88,29 +69,28 @@
 		</Item>
 		<Item Name="Model" Type="Folder">
 			<Item Name="ApplicationElements" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Log" Type="Folder">
-					<Item Name="Log.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Log/Log.lvlib"/>
 					<Item Name="StiffnessLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/StiffnessLog/StiffnessLog.lvclass"/>
 					<Item Name="TestDataLog.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Log/TestDataLog/TestDataLog.lvclass"/>
 				</Item>
 				<Item Name="TemperatureSensor" Type="Folder">
 					<Item Name="AmbientTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/AmbientTemperatureSensor/AmbientTemperatureSensor.lvclass"/>
 					<Item Name="MotorTemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/MotorTemperatureSensor/MotorTemperatureSensor.lvclass"/>
-					<Item Name="TemperatureSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TemperatureSensor/TemperatureSensor/TemperatureSensor.lvclass"/>
 				</Item>
 				<Item Name="ApplicationElements.ctl" Type="VI" URL="../Model/ApplicationElements/ApplicationElements.ctl"/>
-				<Item Name="DistanceGauge.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGauge/DistanceGauge.lvclass"/>
-				<Item Name="Encoder.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Encoder/Encoder.lvclass"/>
-				<Item Name="EncoderReader.lvclass" Type="LVClass" URL="../Model/ApplicationElements/EncoderReader/EncoderReader.lvclass"/>
-				<Item Name="ForceSensor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensor/ForceSensor.lvclass"/>
-				<Item Name="StepperMotor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotor/StepperMotor.lvclass"/>
+				<Item Name="DistanceGaugeTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/DistanceGaugeTC/DistanceGaugeTC.lvclass"/>
+				<Item Name="EncoderReaderTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/EncoderReaderTC/EncoderReaderTC.lvclass"/>
+				<Item Name="StepperMotorTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StepperMotorTC/StepperMotorTC.lvclass"/>
 				<Item Name="StiffnessMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/StiffnessMonitor/StiffnessMonitor.lvclass"/>
 				<Item Name="SystemController.lvclass" Type="LVClass" URL="../Model/ApplicationElements/SystemController/SystemController.lvclass"/>
 				<Item Name="TestMonitor.lvclass" Type="LVClass" URL="../Model/ApplicationElements/TestMonitor/TestMonitor.lvclass"/>
 				<Item Name="Thermocouple.lvclass" Type="LVClass" URL="../Model/ApplicationElements/Thermocouple/Thermocouple.lvclass"/>
+				<Item Name="ForceSensorCalculatorTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensorCalculatorTC/ForceSensorCalculatorTC.lvclass"/>
+				<Item Name="EncoderConverterTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/EncoderConverterTC/EncoderConverterTC.lvclass"/>
 			</Item>
-			<Item Name="ILC_TC" Type="Folder">
-				<Item Name="ILC_TC.lvclass" Type="LVClass" URL="../Model/ILC_TC/ILC_TC.lvclass"/>
+			<Item Name="ILCTC" Type="Folder">
+				<Item Name="ILCTC.lvclass" Type="LVClass" URL="../Model/ILCTC/ILCTC.lvclass"/>
 			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
@@ -119,7 +99,6 @@
 			<Item Name="ILCSim1.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSim1/ILCSim1.lvclass"/>
 			<Item Name="ILCSimBasic.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSimBasic/ILCSimBasic.lvclass"/>
 			<Item Name="ILCSimulatorSignals.lvlib" Type="Library" URL="../SimulateSerialData/ILCSimulatorSignals/ILCSimulatorSignals.lvlib"/>
-			<Item Name="SimulateSerialData.lvclass" Type="LVClass" URL="../SimulateSerialData/SimulateSerialData/SimulateSerialData.lvclass"/>
 			<Item Name="TempSensorSim.lvclass" Type="LVClass" URL="../SimulateSerialData/TempSensorSim/TempSensorSim.lvclass"/>
 		</Item>
 		<Item Name="State" Type="Folder">
@@ -163,11 +142,18 @@
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
-				<Item Name="Application.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Component/Application/Application.lvlib"/>
 				<Item Name="ConfigurationEditor.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationEditor/ConfigurationEditor.lvclass"/>
 				<Item Name="ConfigurationReader.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationReader/ConfigurationReader.lvclass"/>
+				<Item Name="DistanceGauge.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/DistanceGauge/DistanceGauge.lvlib"/>
+				<Item Name="EncoderConverter.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/EncoderConverter/EncoderConverter.lvlib"/>
+				<Item Name="EncoderReader.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/EncoderReader/EncoderReader.lvlib"/>
+				<Item Name="ForceSensorCalculator.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/ForceSensorCalculator/ForceSensorCalculator.lvlib"/>
 				<Item Name="ILCCommon.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/ILC/ILCCommon.lvlib"/>
+				<Item Name="Log.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Log/Log.lvlib"/>
 				<Item Name="SerialProtocols.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/SerialProtocols/SerialProtocols.lvlib"/>
+				<Item Name="SimulateSerialData.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/Simulators/SimulateSerialData/SimulateSerialData.lvclass"/>
+				<Item Name="StepperMotor.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/StepperMotor/StepperMotor.lvlib"/>
+				<Item Name="TemperatureSensor.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/TemperatureSensor/TemperatureSensor.lvlib"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>

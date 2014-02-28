@@ -5,7 +5,7 @@
 <Name>Value</Name>
 <Cluster>
 <Name>ILC ADC</Name>
-<NumElts>6</NumElts>
+<NumElts>7</NumElts>
 <EW>
 <Name>Input Channels</Name>
 <Choice>Channel 0</Choice>
@@ -46,6 +46,10 @@
 <Name>Preamplifier Gain</Name>
 <Val>101</Val>
 </U8>
+<U16>
+<Name>Conversion Settling Cycles</Name>
+<Val>3</Val>
+</U16>
 </Cluster>
 </LvVariant>
 </LVData>

@@ -6,7 +6,6 @@
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="CommandSelector.ctl" Type="VI" URL="../CommandSelector.ctl"/>
 	<Item Name="ControllerData.ctl" Type="VI" URL="../ControllerData.ctl"/>
-	<Item Name="Distance Data.ctl" Type="VI" URL="../Distance Data.ctl"/>
 	<Item Name="ForceDemand.ctl" Type="VI" URL="../ForceDemand.ctl"/>
 	<Item Name="InputData.ctl" Type="VI" URL="../InputData.ctl"/>
 	<Item Name="OutputData.ctl" Type="VI" URL="../OutputData.ctl"/>
@@ -14,7 +13,6 @@
 	<Item Name="StateSelector.ctl" Type="VI" URL="../StateSelector.ctl"/>
 	<Item Name="StiffnessData.ctl" Type="VI" URL="../StiffnessData.ctl"/>
 	<Item Name="SubDataEvents.ctl" Type="VI" URL="../SubDataEvents.ctl"/>
-	<Item Name="TemperatureData.ctl" Type="VI" URL="../TemperatureData.ctl"/>
 	<Item Name="TestStatus.ctl" Type="VI" URL="../TestStatus.ctl"/>
 	<Item Name="ThermocoupleData.ctl" Type="VI" URL="../ThermocoupleData.ctl"/>
 </Library>
