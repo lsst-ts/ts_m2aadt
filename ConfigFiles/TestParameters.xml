@@ -4,11 +4,11 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Test Parameters</Name>
+<Name>TestParameters</Name>
 <NumElts>2</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>10</Val>
+<Val>1</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
@@ -18,15 +18,15 @@
 <Dimsize>4</Dimsize>
 <DBL>
 <Name>Numeric</Name>
-<Val>450.00000000000000</Val>
+<Val>100.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>-450.00000000000000</Val>
+<Val>-250.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>450.00000000000000</Val>
+<Val>300.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>

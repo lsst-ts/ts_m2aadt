@@ -4,7 +4,7 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>ILC ADC</Name>
+<Name>ILCADC</Name>
 <NumElts>7</NumElts>
 <EW>
 <Name>Input Channels</Name>

@@ -4,7 +4,7 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>ILC Serial</Name>
+<Name>EncoderReader</Name>
 <NumElts>1</NumElts>
 <Cluster>
 <Name>Serial</Name>
@@ -22,11 +22,11 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM5</Val>
+<Val>COM7</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>
-<Val>115200</Val>
+<Val>38400</Val>
 </U32>
 <U16>
 <Name>Data Bits</Name>
@@ -47,7 +47,7 @@
 </U16>
 <U16>
 <Name>Stop Bits</Name>
-<Val>10</Val>
+<Val>20</Val>
 </U16>
 <U32>
 <Name>Timeout (ms)</Name>
@@ -67,7 +67,7 @@
 </Boolean>
 <U8>
 <Name>Termination Char</Name>
-<Val>10</Val>
+<Val>3</Val>
 </U8>
 </Cluster>
 </Cluster>

@@ -2,7 +2,7 @@
 <Project Type="Project" LVVersion="13008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
-	<Property Name="varPersistentID:{7E7B8F56-A86A-4D33-ACAA-3F36E4D03467}" Type="Ref">/My Computer/SimulateSerialData/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
+	<Property Name="varPersistentID:{941E2CFD-BA28-41EF-9A4E-850C3D34625D}" Type="Ref">/My Computer/Dependencies/user.lib/ILCSimulatorSignals.lvlib/ILCDataRequest</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -33,23 +33,23 @@
 			<Item Name="Update.lvclass" Type="LVClass" URL="../Commands/Update/Update.lvclass"/>
 		</Item>
 		<Item Name="Configuration" Type="Folder">
-			<Item Name="Ambient Temperature Sensor" Type="Folder">
-				<Item Name="Ambient Temperature Sensor.ctl" Type="VI" URL="../Configuration/Ambient Temperature Sensor.ctl"/>
+			<Item Name="AmbientTemperatureSensor" Type="Folder">
+				<Item Name="AmbientTemperatureSensor.ctl" Type="VI" URL="../Configuration/AmbientTemperatureSensor.ctl"/>
 			</Item>
-			<Item Name="Motor Temperature Sensor" Type="Folder">
-				<Item Name="Motor Temperature Sensor.ctl" Type="VI" URL="../Configuration/Motor Temperature Sensor.ctl"/>
+			<Item Name="MotorTemperatureSensor" Type="Folder">
 				<Item Name="MotorOverheatTemperature.ctl" Type="VI" URL="../Configuration/MotorOverheatTemperature.ctl"/>
+				<Item Name="MotorTemperatureSensor.ctl" Type="VI" URL="../Configuration/MotorTemperatureSensor.ctl"/>
 			</Item>
 			<Item Name="StiffnessMonitor" Type="Folder">
-				<Item Name="Stiffness Monitor.ctl" Type="VI" URL="../Configuration/Stiffness Monitor.ctl"/>
+				<Item Name="StiffnessMonitor.ctl" Type="VI" URL="../Configuration/StiffnessMonitor.ctl"/>
 			</Item>
-			<Item Name="System Controller" Type="Folder">
+			<Item Name="SystemController" Type="Folder">
 				<Item Name="PIDGains.ctl" Type="VI" URL="../Configuration/PIDGains.ctl"/>
-				<Item Name="System Controller.ctl" Type="VI" URL="../Configuration/System Controller.ctl"/>
+				<Item Name="SystemController.ctl" Type="VI" URL="../Configuration/SystemController.ctl"/>
 			</Item>
-			<Item Name="Test Parameters" Type="Folder">
+			<Item Name="TestParameters" Type="Folder">
 				<Item Name="CycleProfileConfig.ctl" Type="VI" URL="../Configuration/CycleProfileConfig.ctl"/>
-				<Item Name="Test Parameters.ctl" Type="VI" URL="../Configuration/Test Parameters.ctl"/>
+				<Item Name="TestParameters.ctl" Type="VI" URL="../Configuration/TestParameters.ctl"/>
 			</Item>
 			<Item Name="Thermocouple" Type="Folder">
 				<Item Name="Thermocouple.ctl" Type="VI" URL="../Configuration/Thermocouple.ctl"/>
@@ -94,13 +94,6 @@
 			</Item>
 			<Item Name="Model.lvclass" Type="LVClass" URL="../Model/Model/Model.lvclass"/>
 		</Item>
-		<Item Name="SimulateSerialData" Type="Folder">
-			<Item Name="DistanceGaugeSim.lvclass" Type="LVClass" URL="../SimulateSerialData/DistanceGaugeSim/DistanceGaugeSim.lvclass"/>
-			<Item Name="ILCSim1.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSim1/ILCSim1.lvclass"/>
-			<Item Name="ILCSimBasic.lvclass" Type="LVClass" URL="../SimulateSerialData/ILCSimBasic/ILCSimBasic.lvclass"/>
-			<Item Name="ILCSimulatorSignals.lvlib" Type="Library" URL="../SimulateSerialData/ILCSimulatorSignals/ILCSimulatorSignals.lvlib"/>
-			<Item Name="TempSensorSim.lvclass" Type="LVClass" URL="../SimulateSerialData/TempSensorSim/TempSensorSim.lvclass"/>
-		</Item>
 		<Item Name="State" Type="Folder">
 			<Item Name="State.lvclass" Type="LVClass" URL="../State/State.lvclass"/>
 		</Item>
@@ -129,27 +122,21 @@
 			<Item Name="UserEvents.lvclass" Type="LVClass" URL="../UserEvents/UserEvents.lvclass"/>
 		</Item>
 		<Item Name="View" Type="Folder">
-			<Item Name="appControlView.vi" Type="VI" URL="../View/appControlView.vi"/>
-			<Item Name="controllerView.vi" Type="VI" URL="../View/controllerView.vi"/>
-			<Item Name="demandsView.vi" Type="VI" URL="../View/demandsView.vi"/>
-			<Item Name="inputsChartView.vi" Type="VI" URL="../View/inputsChartView.vi"/>
-			<Item Name="inputView.vi" Type="VI" URL="../View/inputView.vi"/>
-			<Item Name="m2aadtView.vi" Type="VI" URL="../View/m2aadtView.vi"/>
-			<Item Name="m2aadtViewRTM.rtm" Type="Document" URL="../View/m2aadtViewRTM.rtm"/>
-			<Item Name="outputView.vi" Type="VI" URL="../View/outputView.vi"/>
-			<Item Name="stiffnessChartView.vi" Type="VI" URL="../View/stiffnessChartView.vi"/>
+			<Item Name="M2AADTViews.lvlib" Type="Library" URL="../View/M2AADTViews.lvlib"/>
 			<Item Name="subpanelHelper.vi" Type="VI" URL="../View/subpanelHelper.vi"/>
-			<Item Name="testStatusView.vi" Type="VI" URL="../View/testStatusView.vi"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="ConfigurationEditor.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationEditor/ConfigurationEditor.lvclass"/>
 				<Item Name="ConfigurationReader.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/ConfigurationReader/ConfigurationReader.lvclass"/>
 				<Item Name="DistanceGauge.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/DistanceGauge/DistanceGauge.lvlib"/>
+				<Item Name="DistanceGaugeSim.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/Simulators/DistanceGaugeSim/DistanceGaugeSim.lvclass"/>
 				<Item Name="EncoderConverter.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/EncoderConverter/EncoderConverter.lvlib"/>
 				<Item Name="EncoderReader.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/EncoderReader/EncoderReader.lvlib"/>
 				<Item Name="ForceSensorCalculator.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Devices/ForceSensorCalculator/ForceSensorCalculator.lvlib"/>
 				<Item Name="ILCCommon.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/ILC/ILCCommon.lvlib"/>
+				<Item Name="ILCSim1.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/Simulators/ILCSim1/ILCSim1.lvclass"/>
+				<Item Name="ILCSimulatorSignals.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Simulators/ILCSimulatorSignals/ILCSimulatorSignals.lvlib"/>
 				<Item Name="Log.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/Log/Log.lvlib"/>
 				<Item Name="SerialProtocols.lvlib" Type="Library" URL="/&lt;userlib&gt;/Common/SerialProtocols/SerialProtocols.lvlib"/>
 				<Item Name="SimulateSerialData.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/Common/Simulators/SimulateSerialData/SimulateSerialData.lvclass"/>

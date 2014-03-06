@@ -4,7 +4,7 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Distance Gauge</Name>
+<Name>DistanceGauge</Name>
 <NumElts>2</NumElts>
 <Cluster>
 <Name>Serial</Name>
@@ -22,7 +22,7 @@
 <Refnum>
 <Name>VISA resource name</Name>
 <RefKind>VISA</RefKind>
-<Val>COM6</Val>
+<Val>COM9</Val>
 </Refnum>
 <U32>
 <Name>Baud Rate</Name>

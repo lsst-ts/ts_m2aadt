@@ -4,11 +4,11 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Encoder Converter</Name>
+<Name>StiffnessMonitor</Name>
 <NumElts>1</NumElts>
 <DBL>
-<Name>Distance Per Count</Name>
-<Val>2.44100000000000E-9</Val>
+<Name>Stiffness Lower Limit</Name>
+<Val>2500000.00000000000000</Val>
 </DBL>
 </Cluster>
 </LvVariant>

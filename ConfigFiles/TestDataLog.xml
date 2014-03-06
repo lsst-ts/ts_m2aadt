@@ -4,23 +4,23 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Stiffness Log</Name>
+<Name>TestDataLog</Name>
 <NumElts>4</NumElts>
 <Path>
 <Name>Log Directory</Name>
-<Val>C:\Users\Paul\Documents\Bob\StiffnessLog</Val>
+<Val>C:\Users\Paul\Documents\Bob</Val>
 </Path>
 <String>
 <Name>Log Filename Base</Name>
-<Val>M2AADTStiffnessLog</Val>
+<Val>M2AADTInputData</Val>
 </String>
 <U32>
 <Name>Max records per file</Name>
-<Val>10000</Val>
+<Val>1000</Val>
 </U32>
 <String>
 <Name>Comment</Name>
-<Val>Test</Val>
+<Val>Test data log</Val>
 </String>
 </Cluster>
 </LvVariant>

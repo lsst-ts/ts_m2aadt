@@ -4,11 +4,11 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Stiffness Monitor</Name>
+<Name>StepperMotor</Name>
 <NumElts>1</NumElts>
 <DBL>
-<Name>Stiffness Lower Limit</Name>
-<Val>2500000.00000000000000</Val>
+<Name>Maximum Step Rate</Name>
+<Val>2000.00000000000000</Val>
 </DBL>
 </Cluster>
 </LvVariant>

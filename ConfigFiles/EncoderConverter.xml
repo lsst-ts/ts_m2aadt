@@ -4,11 +4,11 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Stepper Motor</Name>
+<Name>EncoderConverter</Name>
 <NumElts>1</NumElts>
 <DBL>
-<Name>Maximum Step Rate</Name>
-<Val>2000.00000000000000</Val>
+<Name>Distance Per Count</Name>
+<Val>2.44100000000000E-9</Val>
 </DBL>
 </Cluster>
 </LvVariant>

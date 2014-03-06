@@ -4,7 +4,7 @@
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
-<Name>Force Sensor Calculator</Name>
+<Name>ForceSensorCalculator</Name>
 <NumElts>3</NumElts>
 <DBL>
 <Name>Capacity</Name>
