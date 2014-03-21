@@ -89,6 +89,9 @@
 				<Item Name="ForceSensorCalculatorTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/ForceSensorCalculatorTC/ForceSensorCalculatorTC.lvclass"/>
 				<Item Name="EncoderConverterTC.lvclass" Type="LVClass" URL="../Model/ApplicationElements/EncoderConverterTC/EncoderConverterTC.lvclass"/>
 			</Item>
+			<Item Name="ILCSim1TC" Type="Folder">
+				<Item Name="ILCSim1TC.lvclass" Type="LVClass" URL="../Model/ILCSim1TC/ILCSim1TC.lvclass"/>
+			</Item>
 			<Item Name="ILCTC" Type="Folder">
 				<Item Name="ILCTC.lvclass" Type="LVClass" URL="../Model/ILCTC/ILCTC.lvclass"/>
 			</Item>
