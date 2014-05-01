@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
-<Version>13.0f2</Version>
+<Version>13.0.1</Version>
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
@@ -8,7 +8,7 @@
 <NumElts>2</NumElts>
 <U32>
 <Name>Number of cycles for complete test</Name>
-<Val>1</Val>
+<Val>10</Val>
 </U32>
 <Cluster>
 <Name>Cycle profile</Name>
@@ -22,7 +22,7 @@
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>-250.00000000000000</Val>
+<Val>-200.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
@@ -30,7 +30,7 @@
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>-450.00000000000000</Val>
+<Val>-400.00000000000000</Val>
 </DBL>
 </Array>
 <Array>
@@ -46,11 +46,11 @@
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>2.00000000000000</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 <DBL>
 <Name>Numeric</Name>
-<Val>2.00000000000000</Val>
+<Val>0.00000000000000</Val>
 </DBL>
 </Array>
 </Cluster>

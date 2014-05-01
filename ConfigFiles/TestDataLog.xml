@@ -1,6 +1,6 @@
 <?xml version='1.0' standalone='yes' ?>
 <LVData xmlns="http://www.ni.com/LVData">
-<Version>13.0f2</Version>
+<Version>13.0.1</Version>
 <LvVariant>
 <Name>Value</Name>
 <Cluster>
@@ -16,7 +16,7 @@
 </String>
 <U32>
 <Name>Max records per file</Name>
-<Val>1000</Val>
+<Val>20000</Val>
 </U32>
 <String>
 <Name>Comment</Name>
